@@ -1,0 +1,65 @@
+.cloud-1 {
+  transform: scale(0.6);
+  top: 100px;
+  animation: little-cloud 22s linear infinite;
+  animation-delay: 3s;
+}
+
+.cloud-2 {
+  transform: scale(0.4);
+  top: 50px;
+  animation: little-cloud 19s linear infinite;
+  animation-delay: 2s;
+}
+
+.cloud-3 {
+  transform: scale(0.5);
+  top: 150px;
+  animation: little-cloud 17s linear infinite;
+}
+
+.cloud-4 {
+  transform: scale(0.8);
+  top: 250px;
+  animation: little-cloud 25s linear infinite;
+  animation-delay: 6s;
+}
+.cloud {
+  left: -20%;
+}
+.wheel {
+  animation: wheel 30s linear infinite;
+}
+.wheel-2 {
+  animation: none;
+}
+.wheel-joint-1 {
+  animation: wheel-1 5s linear infinite;
+  left: -6px;
+}
+@keyframes little-cloud {
+  0% {
+    left: -20%;
+  }
+  100% {
+    left: 120%;
+  }
+}
+@keyframes wheel {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes wheel-1 {
+  from {
+    left: -6px;
+    transform: rotate(0turn) translateY(-0.6rem) rotate(4turn) ;
+  }
+  to {
+    left: -6px;
+    transform: rotate(4turn) translateY(-0.6rem)  rotate(0turn);
+  }
+}
